@@ -1,35 +1,26 @@
-
-local grad = Instance.new("UIGradient")
-grad.Color = ColorSequence.new{
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(255,60,60)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,255,255))
-}
-grad.Rotation = 135
-grad.Parent = script.Parent
-
 --[=[
- Remoter Serverside
+ Remoter ServerSide
 ]=]
 
 -- Instances: 121 | Scripts: 6 | Modules: 16 | Tags: 1
 local CollectionService = game:GetService("CollectionService");
 local G2L = {};
 
--- StarterGui.Remoter ServersideBackdoor
+-- StarterGui.Remoter ServerSideBackdoor
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
-G2L["1"]["Name"] = [[Remoter ServersideBackdoor]];
+G2L["1"]["Name"] = [[Remoter ServerSideBackdoor]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface
+-- StarterGui.Remoter ServerSideBackdoor.Interface
 G2L["2"] = Instance.new("Folder", G2L["1"]);
 G2L["2"]["Name"] = [[Interface]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main
 G2L["3"] = Instance.new("Frame", G2L["2"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -41,17 +32,17 @@ G2L["3"]["Name"] = [[Main]];
 G2L["3"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.UIDrag
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.UIDrag
 G2L["4"] = Instance.new("LocalScript", G2L["3"]);
 G2L["4"]["Name"] = [[UIDrag]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.MainAPI
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.MainAPI
 G2L["5"] = Instance.new("LocalScript", G2L["3"]);
 G2L["5"]["Name"] = [[MainAPI]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Background
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Background
 G2L["6"] = Instance.new("Frame", G2L["3"]);
 G2L["6"]["ZIndex"] = -10;
 G2L["6"]["BorderSizePixel"] = 0;
@@ -61,14 +52,14 @@ G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6"]["Name"] = [[Background]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Background.DropShadow
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Background.DropShadow
 G2L["7"] = Instance.new("ImageLabel", G2L["6"]);
 G2L["7"]["ZIndex"] = -11;
 G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
 G2L["7"]["ScaleType"] = Enum.ScaleType.Slice;
 G2L["7"]["ImageTransparency"] = 0.5;
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["7"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["7"]["Image"] = [[rbxassetid://6015897843]];
@@ -78,7 +69,7 @@ G2L["7"]["Name"] = [[DropShadow]];
 G2L["7"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top
 G2L["8"] = Instance.new("Frame", G2L["3"]);
 G2L["8"]["BorderSizePixel"] = 0;
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
@@ -87,7 +78,7 @@ G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["8"]["Name"] = [[Top]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Title
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Title
 G2L["9"] = Instance.new("TextLabel", G2L["8"]);
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["TextSize"] = 24;
@@ -98,20 +89,20 @@ G2L["9"]["TextColor3"] = Color3.fromRGB(151, 151, 151);
 G2L["9"]["BackgroundTransparency"] = 1;
 G2L["9"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["Text"] = [[Remoter Serverside]];
+G2L["9"]["Text"] = [[Remoter ServerSide]];
 G2L["9"]["Name"] = [[Title]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Title.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Title.UIPadding
 G2L["a"] = Instance.new("UIPadding", G2L["9"]);
 G2L["a"]["PaddingLeft"] = UDim.new(0, 50);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Title.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Title.Icon
 G2L["b"] = Instance.new("ImageLabel", G2L["9"]);
 G2L["b"]["BorderSizePixel"] = 0;
 G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["b"]["AnchorPoint"] = Vector2.new(0, 0.5);
 G2L["b"]["Image"] = [[rbxassetid://8498174594]];
 G2L["b"]["Size"] = UDim2.new(0.03, 20, 0.2, 20);
@@ -121,12 +112,12 @@ G2L["b"]["Name"] = [[Icon]];
 G2L["b"]["Position"] = UDim2.new(-0.08, 0, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Title.Icon.UIAspectRatioConstraint
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Title.Icon.UIAspectRatioConstraint
 G2L["c"] = Instance.new("UIAspectRatioConstraint", G2L["b"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Connect
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Connect
 G2L["d"] = Instance.new("TextButton", G2L["8"]);
 G2L["d"]["TextWrapped"] = true;
 G2L["d"]["BorderSizePixel"] = 0;
@@ -143,16 +134,16 @@ G2L["d"]["Name"] = [[Connect]];
 G2L["d"]["Position"] = UDim2.new(1.47, -270, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Connect.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Connect.UIPadding
 G2L["e"] = Instance.new("UIPadding", G2L["d"]);
 G2L["e"]["PaddingLeft"] = UDim.new(0, 20);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Connect.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Connect.Icon
 G2L["f"] = Instance.new("ImageLabel", G2L["d"]);
 G2L["f"]["BorderSizePixel"] = 0;
 G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["f"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["f"]["Image"] = [[rbxassetid://85435929620886]];
 G2L["f"]["Size"] = UDim2.new(-0.05, 20, -0.11, 20);
@@ -162,18 +153,18 @@ G2L["f"]["Name"] = [[Icon]];
 G2L["f"]["Position"] = UDim2.new(0.07, -7, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Connect.Icon.UIAspectRatioConstraint
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Connect.Icon.UIAspectRatioConstraint
 G2L["10"] = Instance.new("UIAspectRatioConstraint", G2L["f"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.Connect.UIStroke
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.Connect.UIStroke
 G2L["11"] = Instance.new("UIStroke", G2L["d"]);
 G2L["11"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["11"]["Color"] = Color3.fromRGB(76, 76, 76);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.R6
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.R6
 G2L["12"] = Instance.new("TextButton", G2L["8"]);
 G2L["12"]["TextWrapped"] = true;
 G2L["12"]["BorderSizePixel"] = 0;
@@ -190,21 +181,21 @@ G2L["12"]["Name"] = [[R6]];
 G2L["12"]["Position"] = UDim2.new(1.28, -270, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.R6.LocalScript
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.R6.LocalScript
 G2L["13"] = Instance.new("LocalScript", G2L["12"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.R6.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.R6.UIPadding
 G2L["14"] = Instance.new("UIPadding", G2L["12"]);
 G2L["14"]["PaddingLeft"] = UDim.new(0, 20);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.R6.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.R6.Icon
 G2L["15"] = Instance.new("ImageLabel", G2L["12"]);
 G2L["15"]["BorderSizePixel"] = 0;
 G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["15"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["15"]["Image"] = [[rbxassetid://107170038126400]];
 G2L["15"]["Size"] = UDim2.new(-0.05, 20, -0.11, 20);
@@ -214,18 +205,18 @@ G2L["15"]["Name"] = [[Icon]];
 G2L["15"]["Position"] = UDim2.new(0.07, -7, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.R6.Icon.UIAspectRatioConstraint
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.R6.Icon.UIAspectRatioConstraint
 G2L["16"] = Instance.new("UIAspectRatioConstraint", G2L["15"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.R6.UIStroke
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.R6.UIStroke
 G2L["17"] = Instance.new("UIStroke", G2L["12"]);
 G2L["17"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["17"]["Color"] = Color3.fromRGB(76, 76, 76);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.RE
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.RE
 G2L["18"] = Instance.new("TextButton", G2L["8"]);
 G2L["18"]["TextWrapped"] = true;
 G2L["18"]["BorderSizePixel"] = 0;
@@ -242,21 +233,21 @@ G2L["18"]["Name"] = [[RE]];
 G2L["18"]["Position"] = UDim2.new(1.09, -270, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.RE.LocalScript
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.RE.LocalScript
 G2L["19"] = Instance.new("LocalScript", G2L["18"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.RE.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.RE.UIPadding
 G2L["1a"] = Instance.new("UIPadding", G2L["18"]);
 G2L["1a"]["PaddingLeft"] = UDim.new(0, 20);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.RE.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.RE.Icon
 G2L["1b"] = Instance.new("ImageLabel", G2L["18"]);
 G2L["1b"]["BorderSizePixel"] = 0;
 G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["1b"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["1b"]["Image"] = [[rbxassetid://95334865649966]];
 G2L["1b"]["Size"] = UDim2.new(-0.05, 20, -0.11, 20);
@@ -266,18 +257,18 @@ G2L["1b"]["Name"] = [[Icon]];
 G2L["1b"]["Position"] = UDim2.new(0.07, -7, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.RE.Icon.UIAspectRatioConstraint
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.RE.Icon.UIAspectRatioConstraint
 G2L["1c"] = Instance.new("UIAspectRatioConstraint", G2L["1b"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.RE.UIStroke
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.RE.UIStroke
 G2L["1d"] = Instance.new("UIStroke", G2L["18"]);
 G2L["1d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["1d"]["Color"] = Color3.fromRGB(76, 76, 76);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content
 G2L["1e"] = Instance.new("Frame", G2L["3"]);
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -289,7 +280,7 @@ G2L["1e"]["Name"] = [[Content]];
 G2L["1e"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor
 G2L["1f"] = Instance.new("Frame", G2L["1e"]);
 G2L["1f"]["BorderSizePixel"] = 0;
 G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
@@ -299,7 +290,7 @@ G2L["1f"]["Name"] = [[Executor]];
 G2L["1f"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Tabs
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Tabs
 G2L["20"] = Instance.new("ScrollingFrame", G2L["1f"]);
 G2L["20"]["BorderSizePixel"] = 0;
 G2L["20"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
@@ -313,20 +304,20 @@ G2L["20"]["ScrollBarThickness"] = 0;
 G2L["20"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Tabs.UIListLayout
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Tabs.UIListLayout
 G2L["21"] = Instance.new("UIListLayout", G2L["20"]);
 G2L["21"]["Padding"] = UDim.new(0, 5);
 G2L["21"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
 G2L["21"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Tabs.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Tabs.UIPadding
 G2L["22"] = Instance.new("UIPadding", G2L["20"]);
 G2L["22"]["PaddingRight"] = UDim.new(0, 5);
 G2L["22"]["PaddingLeft"] = UDim.new(0, 5);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Tabs.ZAdd
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Tabs.ZAdd
 G2L["23"] = Instance.new("TextButton", G2L["20"]);
 G2L["23"]["BorderSizePixel"] = 0;
 G2L["23"]["TextSize"] = 20;
@@ -339,7 +330,7 @@ G2L["23"]["Text"] = [[+]];
 G2L["23"]["Name"] = [[ZAdd]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Codebox
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Codebox
 G2L["24"] = Instance.new("Frame", G2L["1f"]);
 G2L["24"]["BorderSizePixel"] = 0;
 G2L["24"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
@@ -350,7 +341,7 @@ G2L["24"]["Name"] = [[Codebox]];
 G2L["24"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons
 G2L["25"] = Instance.new("Frame", G2L["1f"]);
 G2L["25"]["BorderSizePixel"] = 0;
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -362,7 +353,7 @@ G2L["25"]["Name"] = [[Buttons]];
 G2L["25"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Execute
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Execute
 G2L["26"] = Instance.new("TextButton", G2L["25"]);
 G2L["26"]["BorderSizePixel"] = 0;
 G2L["26"]["TextXAlignment"] = Enum.TextXAlignment.Left;
@@ -378,16 +369,16 @@ G2L["26"]["Name"] = [[Execute]];
 G2L["26"]["Position"] = UDim2.new(0.99, 0, 0.35, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Execute.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Execute.UIPadding
 G2L["27"] = Instance.new("UIPadding", G2L["26"]);
 G2L["27"]["PaddingLeft"] = UDim.new(0, 35);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Execute.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Execute.Icon
 G2L["28"] = Instance.new("ImageLabel", G2L["26"]);
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["28"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["28"]["Image"] = [[rbxassetid://94250258126863]];
 G2L["28"]["Size"] = UDim2.new(0.03, 20, 0.08, 20);
@@ -397,24 +388,24 @@ G2L["28"]["Name"] = [[Icon]];
 G2L["28"]["Position"] = UDim2.new(0.01, -7, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Execute.Icon.UIAspectRatioConstraint
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Execute.Icon.UIAspectRatioConstraint
 G2L["29"] = Instance.new("UIAspectRatioConstraint", G2L["28"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Execute.UIStroke
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Execute.UIStroke
 G2L["2a"] = Instance.new("UIStroke", G2L["26"]);
 G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["2a"]["Color"] = Color3.fromRGB(76, 76, 76);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.UIPadding
 G2L["2b"] = Instance.new("UIPadding", G2L["25"]);
 G2L["2b"]["PaddingRight"] = UDim.new(0, 5);
 G2L["2b"]["PaddingLeft"] = UDim.new(0, 5);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Clear
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Clear
 G2L["2c"] = Instance.new("TextButton", G2L["25"]);
 G2L["2c"]["BorderSizePixel"] = 0;
 G2L["2c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
@@ -430,11 +421,11 @@ G2L["2c"]["Name"] = [[Clear]];
 G2L["2c"]["Position"] = UDim2.new(0.99, -135, 0.35, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Clear.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Clear.Icon
 G2L["2d"] = Instance.new("ImageLabel", G2L["2c"]);
 G2L["2d"]["BorderSizePixel"] = 0;
 G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["2d"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["2d"]["Image"] = [[rbxassetid://90741188592731]];
 G2L["2d"]["Size"] = UDim2.new(0.09, 15, 0.16, 15);
@@ -444,23 +435,23 @@ G2L["2d"]["Name"] = [[Icon]];
 G2L["2d"]["Position"] = UDim2.new(0.02, -10, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Clear.Icon.UIAspectRatioConstraint
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Clear.Icon.UIAspectRatioConstraint
 G2L["2e"] = Instance.new("UIAspectRatioConstraint", G2L["2d"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Clear.UIStroke
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Clear.UIStroke
 G2L["2f"] = Instance.new("UIStroke", G2L["2c"]);
 G2L["2f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["2f"]["Color"] = Color3.fromRGB(76, 76, 76);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Clear.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Clear.UIPadding
 G2L["30"] = Instance.new("UIPadding", G2L["2c"]);
 G2L["30"]["PaddingLeft"] = UDim.new(0, 35);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Hide
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Hide
 G2L["31"] = Instance.new("TextButton", G2L["25"]);
 G2L["31"]["BorderSizePixel"] = 0;
 G2L["31"]["TextXAlignment"] = Enum.TextXAlignment.Left;
@@ -476,21 +467,21 @@ G2L["31"]["Name"] = [[Hide]];
 G2L["31"]["Position"] = UDim2.new(0.99, -270, 0.35, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.LocalScript
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.LocalScript
 G2L["32"] = Instance.new("LocalScript", G2L["31"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.UIPadding
 G2L["33"] = Instance.new("UIPadding", G2L["31"]);
 G2L["33"]["PaddingLeft"] = UDim.new(0, 35);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.Icon
 G2L["34"] = Instance.new("ImageLabel", G2L["31"]);
 G2L["34"]["BorderSizePixel"] = 0;
 G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["34"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["34"]["Image"] = [[rbxassetid://91515864926349]];
 G2L["34"]["Size"] = UDim2.new(0, 20, 0, 20);
@@ -500,23 +491,23 @@ G2L["34"]["Name"] = [[Icon]];
 G2L["34"]["Position"] = UDim2.new(0, -7, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.UIStroke
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.UIStroke
 G2L["35"] = Instance.new("UIStroke", G2L["31"]);
 G2L["35"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["35"]["Color"] = Color3.fromRGB(76, 76, 76);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts
+-- StarterGui.Remoter ServerSideBackdoor.Scripts
 G2L["36"] = Instance.new("Folder", G2L["1"]);
 G2L["36"]["Name"] = [[Scripts]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Core
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Core
 G2L["37"] = Instance.new("LocalScript", G2L["36"]);
 G2L["37"]["Name"] = [[Core]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Core.TabTemp
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Core.TabTemp
 G2L["38"] = Instance.new("TextButton", G2L["37"]);
 G2L["38"]["BorderSizePixel"] = 0;
 G2L["38"]["TextSize"] = 12;
@@ -531,14 +522,14 @@ G2L["38"]["Name"] = [[TabTemp]];
 G2L["38"]["Position"] = UDim2.new(0, 0, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Core.TabTemp.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Core.TabTemp.UIPadding
 G2L["39"] = Instance.new("UIPadding", G2L["38"]);
 G2L["39"]["PaddingRight"] = UDim.new(0, 5);
 G2L["39"]["PaddingLeft"] = UDim.new(0, 5);
 G2L["39"]["PaddingBottom"] = UDim.new(0, 2);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Core.TabTemp.Underline
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Core.TabTemp.Underline
 G2L["3a"] = Instance.new("Frame", G2L["38"]);
 G2L["3a"]["BorderSizePixel"] = 0;
 G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(164, 164, 164);
@@ -549,7 +540,7 @@ G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3a"]["Name"] = [[Underline]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Core.TabTemp.Close
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Core.TabTemp.Close
 G2L["3b"] = Instance.new("TextButton", G2L["38"]);
 G2L["3b"]["BorderSizePixel"] = 0;
 G2L["3b"]["TextSize"] = 14;
@@ -566,37 +557,37 @@ G2L["3b"]["Name"] = [[Close]];
 G2L["3b"]["Position"] = UDim2.new(1, 0, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules
 G2L["3c"] = Instance.new("Folder", G2L["36"]);
 G2L["3c"]["Name"] = [[Modules]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu
 G2L["3d"] = Instance.new("ModuleScript", G2L["3c"]);
 G2L["3d"]["Name"] = [[Kodobokkusu]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Highlighter
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Highlighter
 G2L["3e"] = Instance.new("ModuleScript", G2L["3d"]);
 G2L["3e"]["Name"] = [[Highlighter]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Highlighter.Lexer
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Highlighter.Lexer
 G2L["3f"] = Instance.new("ModuleScript", G2L["3e"]);
 G2L["3f"]["Name"] = [[Lexer]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Highlighter.Lexer.Language
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Highlighter.Lexer.Language
 G2L["40"] = Instance.new("ModuleScript", G2L["3f"]);
 G2L["40"]["Name"] = [[Language]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput
 G2L["41"] = Instance.new("ModuleScript", G2L["3d"]);
 G2L["41"]["Name"] = [[CustomInput]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput.InputCursor
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput.InputCursor
 G2L["42"] = Instance.new("Frame", G2L["41"]);
 G2L["42"]["ZIndex"] = 5;
 G2L["42"]["BorderSizePixel"] = 0;
@@ -607,7 +598,7 @@ G2L["42"]["Name"] = [[InputCursor]];
 G2L["42"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput.LineHighlighter
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput.LineHighlighter
 G2L["43"] = Instance.new("Frame", G2L["41"]);
 G2L["43"]["BorderSizePixel"] = 0;
 G2L["43"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -617,24 +608,24 @@ G2L["43"]["Name"] = [[LineHighlighter]];
 G2L["43"]["BackgroundTransparency"] = 0.9;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput.LineHighlighter.Outline
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput.LineHighlighter.Outline
 G2L["44"] = Instance.new("UIStroke", G2L["43"]);
 G2L["44"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["44"]["Name"] = [[Outline]];
 G2L["44"]["Color"] = Color3.fromRGB(46, 46, 46);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput.LineHighlighter.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.CustomInput.LineHighlighter.UIPadding
 G2L["45"] = Instance.new("UIPadding", G2L["43"]);
 G2L["45"]["PaddingLeft"] = UDim.new(0, 10);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Lines
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Lines
 G2L["46"] = Instance.new("ModuleScript", G2L["3d"]);
 G2L["46"]["Name"] = [[Lines]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Lines.Highlighter
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Lines.Highlighter
 G2L["47"] = Instance.new("Frame", G2L["46"]);
 G2L["47"]["BorderSizePixel"] = 0;
 G2L["47"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -645,34 +636,34 @@ G2L["47"]["Name"] = [[Highlighter]];
 G2L["47"]["BackgroundTransparency"] = 0.9;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Lines.Highlighter.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Lines.Highlighter.UIPadding
 G2L["48"] = Instance.new("UIPadding", G2L["47"]);
 G2L["48"]["PaddingLeft"] = UDim.new(0, 10);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Lines.Highlighter.Outline
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Lines.Highlighter.Outline
 G2L["49"] = Instance.new("UIStroke", G2L["47"]);
 G2L["49"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["49"]["Name"] = [[Outline]];
 G2L["49"]["Color"] = Color3.fromRGB(46, 46, 46);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Indenter
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Indenter
 G2L["4a"] = Instance.new("ModuleScript", G2L["3d"]);
 G2L["4a"]["Name"] = [[Indenter]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete
 G2L["4b"] = Instance.new("ModuleScript", G2L["3d"]);
 G2L["4b"]["Name"] = [[Autocomplete]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Language
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Language
 G2L["4c"] = Instance.new("ModuleScript", G2L["4b"]);
 G2L["4c"]["Name"] = [[Language]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Palete
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Palete
 G2L["4d"] = Instance.new("TextButton", G2L["4b"]);
 G2L["4d"]["RichText"] = true;
 G2L["4d"]["BorderSizePixel"] = 0;
@@ -689,17 +680,17 @@ G2L["4d"]["Text"] = [[getfenv]];
 G2L["4d"]["Name"] = [[Palete]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Palete.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Palete.UIPadding
 G2L["4e"] = Instance.new("UIPadding", G2L["4d"]);
 G2L["4e"]["PaddingLeft"] = UDim.new(0, 35);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Palete.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Palete.Icon
 G2L["4f"] = Instance.new("ImageLabel", G2L["4d"]);
 G2L["4f"]["ZIndex"] = 6;
 G2L["4f"]["BorderSizePixel"] = 0;
 G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["4f"]["ImageColor3"] = Color3.fromRGB(255, 0, 0);
 G2L["4f"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["4f"]["Image"] = [[rbxassetid://119893371750481]];
@@ -710,12 +701,12 @@ G2L["4f"]["Name"] = [[Icon]];
 G2L["4f"]["Position"] = UDim2.new(0, -10, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Palete.UICorner
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.Palete.UICorner
 G2L["50"] = Instance.new("UICorner", G2L["4d"]);
 G2L["50"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame
 G2L["51"] = Instance.new("ScrollingFrame", G2L["4b"]);
 G2L["51"]["Active"] = true;
 G2L["51"]["ZIndex"] = 5;
@@ -731,18 +722,18 @@ G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["51"]["ScrollBarThickness"] = 0;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.UICorner
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.UICorner
 G2L["52"] = Instance.new("UICorner", G2L["51"]);
 G2L["52"]["CornerRadius"] = UDim.new(0, 5);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.UIStroke
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.UIStroke
 G2L["53"] = Instance.new("UIStroke", G2L["51"]);
 G2L["53"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["53"]["Color"] = Color3.fromRGB(51, 51, 51);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.KeywordInfo
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.KeywordInfo
 G2L["54"] = Instance.new("ScrollingFrame", G2L["51"]);
 G2L["54"]["Active"] = true;
 G2L["54"]["ZIndex"] = 6;
@@ -757,7 +748,7 @@ G2L["54"]["ScrollBarThickness"] = 2;
 G2L["54"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.KeywordInfo.TextLabel
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.KeywordInfo.TextLabel
 G2L["55"] = Instance.new("TextLabel", G2L["54"]);
 G2L["55"]["ZIndex"] = 7;
 G2L["55"]["BorderSizePixel"] = 0;
@@ -774,13 +765,13 @@ G2L["55"]["Text"] = [[local :: assign a variable, EX: local var = 0]];
 G2L["55"]["AutomaticSize"] = Enum.AutomaticSize.X;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.KeywordInfo.TextLabel.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.KeywordInfo.TextLabel.UIPadding
 G2L["56"] = Instance.new("UIPadding", G2L["55"]);
 G2L["56"]["PaddingRight"] = UDim.new(0, 10);
 G2L["56"]["PaddingLeft"] = UDim.new(0, 10);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.Paletes
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.Paletes
 G2L["57"] = Instance.new("ScrollingFrame", G2L["51"]);
 G2L["57"]["Active"] = true;
 G2L["57"]["BorderSizePixel"] = 0;
@@ -796,33 +787,33 @@ G2L["57"]["ScrollBarThickness"] = 2;
 G2L["57"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.Paletes.UIListLayout
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Autocomplete.AutocompleteFrame.Paletes.UIListLayout
 G2L["58"] = Instance.new("UIListLayout", G2L["57"]);
 G2L["58"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
 G2L["58"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Shared
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Shared
 G2L["59"] = Instance.new("ModuleScript", G2L["3d"]);
 G2L["59"]["Name"] = [[Shared]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Methods
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Methods
 G2L["5a"] = Instance.new("Folder", G2L["3d"]);
 G2L["5a"]["Name"] = [[Methods]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Methods.Beautify
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Methods.Beautify
 G2L["5b"] = Instance.new("ModuleScript", G2L["5a"]);
 G2L["5b"]["Name"] = [[Beautify]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Methods.Obfuscate
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Methods.Obfuscate
 G2L["5c"] = Instance.new("ModuleScript", G2L["5a"]);
 G2L["5c"]["Name"] = [[Obfuscate]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox
 G2L["5d"] = Instance.new("Frame", G2L["3d"]);
 G2L["5d"]["BorderSizePixel"] = 0;
 G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -833,7 +824,7 @@ G2L["5d"]["Name"] = [[Textbox]];
 G2L["5d"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main
 G2L["5e"] = Instance.new("Frame", G2L["5d"]);
 G2L["5e"]["BorderSizePixel"] = 0;
 G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -843,13 +834,13 @@ G2L["5e"]["Name"] = [[Main]];
 G2L["5e"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.TextboxLayout
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.TextboxLayout
 G2L["5f"] = Instance.new("UIListLayout", G2L["5e"]);
 G2L["5f"]["Name"] = [[TextboxLayout]];
 G2L["5f"]["FillDirection"] = Enum.FillDirection.Horizontal;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines
 G2L["60"] = Instance.new("ScrollingFrame", G2L["5e"]);
 G2L["60"]["Active"] = true;
 G2L["60"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
@@ -869,12 +860,12 @@ G2L["60"]["ScrollBarThickness"] = 0;
 G2L["60"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.Padded
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.Padded
 G2L["61"] = Instance.new("Folder", G2L["60"]);
 G2L["61"]["Name"] = [[Padded]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.Label
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.Label
 G2L["62"] = Instance.new("TextLabel", G2L["60"]);
 G2L["62"]["ZIndex"] = 4;
 G2L["62"]["BorderSizePixel"] = 0;
@@ -892,26 +883,26 @@ G2L["62"]["AutomaticSize"] = Enum.AutomaticSize.X;
 G2L["62"]["Name"] = [[Label]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.Label.UIStroke
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.Label.UIStroke
 G2L["63"] = Instance.new("UIStroke", G2L["62"]);
 G2L["63"]["Transparency"] = 1;
 G2L["63"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["63"]["Color"] = Color3.fromRGB(51, 51, 51);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.Label.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.Label.UIPadding
 G2L["64"] = Instance.new("UIPadding", G2L["62"]);
 G2L["64"]["PaddingRight"] = UDim.new(0.5, 7);
 G2L["64"]["PaddingLeft"] = UDim.new(0.5, 10);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Lines.UIPadding
 G2L["65"] = Instance.new("UIPadding", G2L["60"]);
 G2L["65"]["PaddingTop"] = UDim.new(0, 5);
 G2L["65"]["PaddingLeft"] = UDim.new(0, 5);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Textbox
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Textbox
 G2L["66"] = Instance.new("ScrollingFrame", G2L["5e"]);
 G2L["66"]["Active"] = true;
 G2L["66"]["BorderSizePixel"] = 0;
@@ -927,7 +918,7 @@ G2L["66"]["ScrollBarThickness"] = 7;
 G2L["66"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Textbox.Input
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Textbox.Input
 G2L["67"] = Instance.new("TextBox", G2L["66"]);
 G2L["67"]["Name"] = [[Input]];
 G2L["67"]["TextXAlignment"] = Enum.TextXAlignment.Left;
@@ -949,19 +940,19 @@ G2L["67"]["Text"] = [[]];
 G2L["67"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Textbox.Input.UIPadding
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Textbox.Input.UIPadding
 G2L["68"] = Instance.new("UIPadding", G2L["67"]);
 G2L["68"]["PaddingTop"] = UDim.new(0, 5);
 G2L["68"]["PaddingRight"] = UDim.new(0, 5);
 G2L["68"]["PaddingLeft"] = UDim.new(0, 2);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Unaligned
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Unaligned
 G2L["69"] = Instance.new("Folder", G2L["5e"]);
 G2L["69"]["Name"] = [[Unaligned]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Unaligned.Shadow
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Unaligned.Shadow
 G2L["6a"] = Instance.new("Frame", G2L["69"]);
 G2L["6a"]["BorderSizePixel"] = 0;
 G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -971,13 +962,13 @@ G2L["6a"]["Name"] = [[Shadow]];
 G2L["6a"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Unaligned.Shadow.DropShadow
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Main.Unaligned.Shadow.DropShadow
 G2L["6b"] = Instance.new("ImageLabel", G2L["6a"]);
 G2L["6b"]["BorderSizePixel"] = 0;
 G2L["6b"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
 G2L["6b"]["ScaleType"] = Enum.ScaleType.Slice;
 G2L["6b"]["ImageTransparency"] = 1;
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["6b"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["6b"]["Image"] = [[rbxassetid://6015897843]];
@@ -987,7 +978,7 @@ G2L["6b"]["Name"] = [[DropShadow]];
 G2L["6b"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Others
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Others
 G2L["6c"] = Instance.new("Frame", G2L["5d"]);
 G2L["6c"]["BorderSizePixel"] = 0;
 G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -998,7 +989,7 @@ G2L["6c"]["Name"] = [[Others]];
 G2L["6c"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Others.Hidden
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Others.Hidden
 G2L["6d"] = Instance.new("Frame", G2L["6c"]);
 G2L["6d"]["Visible"] = false;
 G2L["6d"]["BorderSizePixel"] = 0;
@@ -1009,12 +1000,12 @@ G2L["6d"]["Name"] = [[Hidden]];
 G2L["6d"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Others.Hidden.Icon
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Others.Hidden.Icon
 G2L["6e"] = Instance.new("ImageLabel", G2L["6d"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["6e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["6e"]["Image"] = [[http://www.roblox.com/asset/?id=13571270194]];
 G2L["6e"]["Size"] = UDim2.new(0.4, 0, 0.4, 0);
@@ -1024,7 +1015,7 @@ G2L["6e"]["Name"] = [[Icon]];
 G2L["6e"]["Position"] = UDim2.new(0.5, 0, 0.3, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Others.Hidden.TextLabel
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Kodobokkusu.Textbox.Others.Hidden.TextLabel
 G2L["6f"] = Instance.new("TextLabel", G2L["6d"]);
 G2L["6f"]["BorderSizePixel"] = 0;
 G2L["6f"]["TextSize"] = 20;
@@ -1040,55 +1031,55 @@ G2L["6f"]["AutomaticSize"] = Enum.AutomaticSize.X;
 G2L["6f"]["Position"] = UDim2.new(0.5, 0, 0.55, 0);
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.TabControl
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.TabControl
 G2L["70"] = Instance.new("ModuleScript", G2L["3c"]);
 G2L["70"]["Name"] = [[TabControl]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.Resuponshibu
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.Resuponshibu
 G2L["71"] = Instance.new("ModuleScript", G2L["3c"]);
 G2L["71"]["Name"] = [[Resuponshibu]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.SecureEnv
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.SecureEnv
 G2L["72"] = Instance.new("ModuleScript", G2L["3c"]);
 G2L["72"]["Name"] = [[SecureEnv]];
 
 -- Tags
 CollectionService:AddTag(G2L["72"], [[Packets]]);
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.SecureEnv.EnvironmentHandler
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.SecureEnv.EnvironmentHandler
 G2L["73"] = Instance.new("ModuleScript", G2L["72"]);
 G2L["73"]["Name"] = [[EnvironmentHandler]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.SecureEnv.Configuration
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.SecureEnv.Configuration
 G2L["74"] = Instance.new("Configuration", G2L["72"]);
 
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.SecureEnv.Configuration.SecureNum
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.SecureEnv.Configuration.SecureNum
 G2L["75"] = Instance.new("DoubleConstrainedValue", G2L["74"]);
 G2L["75"]["Name"] = [[SecureNum]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.SecureEnv.Configuration.NewEnv
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.SecureEnv.Configuration.NewEnv
 G2L["76"] = Instance.new("StringValue", G2L["74"]);
 G2L["76"]["Name"] = [[NewEnv]];
 G2L["76"]["Value"] = [[EnvironmentHandler]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.SecureEnv.Configuration.EnvRun
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.SecureEnv.Configuration.EnvRun
 G2L["77"] = Instance.new("DoubleConstrainedValue", G2L["74"]);
 G2L["77"]["Name"] = [[EnvRun]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.SecureEnv.Configuration.NumberService
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.SecureEnv.Configuration.NumberService
 G2L["78"] = Instance.new("DoubleConstrainedValue", G2L["74"]);
 G2L["78"]["Name"] = [[NumberService]];
 
 
--- StarterGui.Remoter ServersideBackdoor.Scripts.Modules.SecureEnv.Configuration.SecureLocation
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Modules.SecureEnv.Configuration.SecureLocation
 G2L["79"] = Instance.new("DoubleConstrainedValue", G2L["74"]);
 G2L["79"]["Name"] = [[SecureLocation]];
 
@@ -5259,11 +5250,10 @@ G2L_MODULES[G2L["73"]] = {
 		return EnvHandler
 	end;
 };
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.UIDrag
+
 local function C_4()
 	local script = G2L["4"];
-	-- Made by Real_IceyDev (@lceyDex) --
-	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+
 
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -5301,7 +5291,7 @@ local function C_4()
 	end)
 end;
 task.spawn(C_4);
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.MainAPI
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.MainAPI
 local function C_5()
 	local script = G2L["5"];
 	local buttons = {
@@ -5355,7 +5345,7 @@ local function C_5()
 	local activeTests = {}
 	local function setupGlobalDescendantListener()
 		ReplicatedStorage.DescendantAdded:Connect(function(inst)
-			if inst:IsA("Folder") and inst.Name:sub(1, 5) == "remoter_" then
+			if inst:IsA("Folder") and inst.Name:sub(1, 5) == "Remoter ServerSide_" then
 				local testId = inst.Name
 				if activeTests[testId] then
 					activeTests[testId].found = true
@@ -5370,7 +5360,7 @@ local function C_5()
 		if foundExploit then return false end
 
 
-		local testId = "remoter_" .. tostring(os.clock()):gsub("[^%d]", "")
+		local testId = "Remoter ServerSide_" .. tostring(os.clock()):gsub("[^%d]", "")
 		local payload = string.format([[
 				local m = Instance.new("Folder")
 				m.Name = "%s"
@@ -5387,7 +5377,7 @@ local function C_5()
 
 		local RE = [[
 			local m = Instance.new("Message", game.Workspace)
-			m.Text = "Remoter Serverside On top !!"
+			m.Text = "Remoter ServerSide On top !!"
 			wait(4)
 			m:Destroy()
 			]]
@@ -5401,14 +5391,14 @@ local function C_5()
 
 		local Hint = [[
 			local hint = Instance.new("Hint", game.Workspace)
-			hint.Text = "Game Backdoored by Remoter Serverside !! gg/W5bNxXf85r --- fastest backdoor executor"
+			hint.Text = "Game Backdoored by Remoter ServerSide"
 			
 			while true do
 				wait(5)
 				hint:Destroy()
 				wait(5)
 				local hint = Instance.new("Hint", game.Workspace)
-				hint.Text = "Game Backdoored by Remoter Serverside !! gg/W5bNxXf85r --- fastest backdoor executor"
+				hint.Text = "Game Backdoored by Remoter ServerSide"
 			end
 			]]
 
@@ -5419,13 +5409,13 @@ local function C_5()
 			if isFunction then
 				task.spawn(function() 
 					pcall(function() remote:InvokeServer(payload) end)
-					pcall(function() remote:InvokeServer("remoterTSS", payload) end)
+					pcall(function() remote:InvokeServer("Remoter ServerSideTSS", payload) end)
 					pcall(function() remote:InvokeServer(RE) end)
 					pcall(function() remote:InvokeServer(Hint) end) --- its hint dumbass
 				end)
 			else
 				pcall(function() remote:FireServer(payload) end)
-				pcall(function() remote:FireServer("remoterTSS", payload) end)
+				pcall(function() remote:FireServer("Remoter ServerSideTSS", payload) end)
 				pcall(function() remote:FireServer(RE) end)
 				pcall(function() remote:FireServer(Hint) end) --- its hint dumbass
 			end
@@ -5448,7 +5438,7 @@ local function C_5()
 				end
 			end
 		end
-		print(string.format("Remoter: 🔍 Found %d potential remotes in %.2fms", #candidates, (os.clock() - initialScanStart) * 1000))
+		print(string.format("Remoter ServerSide: 🔍 Found %d potential remotes in %.2fms", #candidates, (os.clock() - initialScanStart) * 1000))
 
 		local testStartTime = os.clock() 
 		local activeTestIds = {}
@@ -5481,7 +5471,7 @@ local function C_5()
 						else
 							remoteEvent = testData.remote
 						end
-						print("Remoter: backdoor found:", testData.remote:GetFullName())
+						print("Remoter ServerSide: backdoor found:", testData.remote:GetFullName())
 						timeToFindExploit = os.clock() - initialScanStart
 						activeTests[testId] = nil
 						table.remove(activeTestIds, i)
@@ -5496,7 +5486,7 @@ local function C_5()
 
 		scanTime = os.clock() - initialScanStart
 		if not foundExploit then
-			print("Remoter: no backdoor found")
+			print("Remoter ServerSide: no backdoor found")
 		else
 			print("🔓 Backdoor remote located!")
 		end
@@ -5524,18 +5514,18 @@ local function C_5()
 					elseif remoteFunction then
 						print("ℹ️ Executing via RemoteFunction:", remoteFunction:GetFullName())
 						pcall(function()
-							remoteFunction:InvokeServer("remoterTSS", code)
+							remoteFunction:InvokeServer("Remoter ServerSideTSS", code)
 						end)
 					end
 					StarterGui:SetCore("SendNotification", {
-						Title = "Remoter",
+						Title = "Remoter ServerSide",
 						Text = "Code executed through backdoor",
 						Icon = "rbxassetid://73958241564252",
 						Duration = 3,
 					})
 				else
 					StarterGui:SetCore("SendNotification", {
-						Title = "Remoter",
+						Title = "Remoter ServerSide",
 						Text = "No Code to Execute",
 						Icon = "rbxassetid://73958241564252",
 						Duration = 3,
@@ -5547,7 +5537,7 @@ local function C_5()
 				buttons.connect.Text = "Not Infected!"
 				buttons.connect.TextScaled = true
 				StarterGui:SetCore("SendNotification", {
-					Title = "Remoter Serverside",
+					Title = "Remoter ServerSide",
 					Text = "No Backdoor Found",
 					Icon = "rbxassetid://73958241564252",
 					Duration = 5,
@@ -5560,7 +5550,7 @@ local function C_5()
 		buttons.connect.Text = "Infecting!"
 		buttons.connect.TextScaled = false
 		StarterGui:SetCore("SendNotification", {
-			Title = "Remoter Serverside",
+			Title = "Remoter ServerSide",
 			Text = "Checking for backdoors...",
 			Icon = "rbxassetid://7395824155",
 			Duration = 3,
@@ -5569,14 +5559,14 @@ local function C_5()
 			local scanStart = os.clock() 
 			simpleFindRemote()
 			local scanEnd = os.clock()
-			print(string.format("Remoter: Scan completed in %.2f ms", (scanEnd - scanStart) * 1000))
+			print(string.format("Remoter ServerSide: Scan completed in %.2f ms", (scanEnd - scanStart) * 1000))
 
 			if foundExploit then
 				local formattedTime = string.format("%.2f", timeToFindExploit)
 				buttons.connect.Text = "Infected!"
 				buttons.connect.TextScaled = false
 				StarterGui:SetCore("SendNotification", {
-					Title = "Remoter",
+					Title = "Remoter ServerSide",
 					Text = "Backdoor found in " .. formattedTime .. " seconds!",
 					Icon = "rbxassetid://73958241564252",
 					Duration = 5,
@@ -5585,7 +5575,7 @@ local function C_5()
 				buttons.connect.Text = "Not Infected!"
 				buttons.connect.TextScaled = true
 				StarterGui:SetCore("SendNotification", {
-					Title = "Remoter",
+					Title = "Remoter ServerSide",
 					Text = "No backdoor found",
 					Icon = "rbxassetid://73958241564252",
 					Duration = 5,
@@ -5602,7 +5592,7 @@ local function C_5()
 	updateExeButton()
 end;
 task.spawn(C_5);
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.R6.LocalScript
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.R6.LocalScript
 local function C_13()
 	local script = G2L["13"];
 	local SAFE_LOCATIONS = {
@@ -5645,7 +5635,7 @@ local function C_13()
 	local activeTests = {}
 	local function setupGlobalDescendantListener()
 		ReplicatedStorage.DescendantAdded:Connect(function(inst)
-			if inst:IsA("Folder") and inst.Name:sub(1, 5) == "remoter_" then
+			if inst:IsA("Folder") and inst.Name:sub(1, 5) == "Remoter ServerSide_" then
 				local testId = inst.Name
 				if activeTests[testId] then
 					activeTests[testId].found = true
@@ -5659,7 +5649,7 @@ local function C_13()
 
 		if foundExploit then return false end
 
-		local testId = "remoter_" .. tostring(os.clock()):gsub("[^%d]", "")
+		local testId = "Remoter ServerSide_" .. tostring(os.clock()):gsub("[^%d]", "")
 		local payload = string.format([[
 				local m = Instance.new("Folder")
 				m.Name = "%s"
@@ -5678,12 +5668,12 @@ local function C_13()
 			if isFunction then
 				task.spawn(function()
 					pcall(function() remote:InvokeServer(payload) end)
-					pcall(function() remote:InvokeServer("remoterTSS", payload) end)
+					pcall(function() remote:InvokeServer("Remoter ServerSideTSS", payload) end)
 					pcall(function() remote:InvokeServer(payloading) end)
 				end)
 			else
 				pcall(function() remote:FireServer(payload) end)
-				pcall(function() remote:FireServer("remoterTSS", payload) end)
+				pcall(function() remote:FireServer("Remoter ServerSideTSS", payload) end)
 				pcall(function() remote:FireServer(payloading) end)
 			end
 		end)
@@ -5707,7 +5697,7 @@ local function C_13()
 				end
 			end
 		end
-		print(string.format("Remoter: 🔍 Found %d potential remotes in %.2fms", #candidates, (os.clock() - initialScanStart) * 1000))
+		print(string.format("Remoter ServerSide: 🔍 Found %d potential remotes in %.2fms", #candidates, (os.clock() - initialScanStart) * 1000))
 
 		local testStartTime = os.clock()
 
@@ -5741,7 +5731,7 @@ local function C_13()
 						else
 							remoteEvent = testData.remote
 						end
-						print("Remoter: backdoor found:", testData.remote:GetFullName())
+						print("Remoter ServerSide: backdoor found:", testData.remote:GetFullName())
 						timeToFindExploit = os.clock() - initialScanStart
 						activeTests[testId] = nil
 						table.remove(activeTestIds, i)
@@ -5756,7 +5746,7 @@ local function C_13()
 
 		scanTime = os.clock() - initialScanStart
 		if not foundExploit then
-			print("Remoter: no backdoor found")
+			print("Remoter ServerSide: no backdoor found")
 		else
 			print("🔓 Backdoor remote located!")
 		end
@@ -5773,12 +5763,12 @@ local function C_13()
 		end)
 	else
 
-		print("Remoter: Running initial backdoor scan...")
+		print("Remoter ServerSide: Running initial backdoor scan...")
 		task.spawn(simpleFindRemote)
 	end
 end;
 task.spawn(C_13);
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Top.RE.LocalScript
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Top.RE.LocalScript
 local function C_19()
 	local script = G2L["19"];
 	local SAFE_LOCATIONS = {
@@ -5821,7 +5811,7 @@ local function C_19()
 	local activeTests = {}
 	local function setupGlobalDescendantListener()
 		ReplicatedStorage.DescendantAdded:Connect(function(inst)
-			if inst:IsA("Folder") and inst.Name:sub(1, 5) == "remoter_" then
+			if inst:IsA("Folder") and inst.Name:sub(1, 5) == "Remoter ServerSide_" then
 				local testId = inst.Name
 				if activeTests[testId] then
 					activeTests[testId].found = true
@@ -5835,7 +5825,7 @@ local function C_19()
 
 		if foundExploit then return false end
 
-		local testId = "remoter_" .. tostring(os.clock()):gsub("[^%d]", "")
+		local testId = "Remoter ServerSide_" .. tostring(os.clock()):gsub("[^%d]", "")
 		local payload = string.format([[
 				local m = Instance.new("Folder")
 				m.Name = "%s"
@@ -5860,12 +5850,12 @@ local function C_19()
 			if isFunction then
 				task.spawn(function()
 					pcall(function() remote:InvokeServer(payload) end)
-					pcall(function() remote:InvokeServer("remoterTSS", payload) end)
+					pcall(function() remote:InvokeServer("Remoter ServerSideTSS", payload) end)
 					pcall(function() remote:InvokeServer(payloading) end)
 				end)
 			else
 				pcall(function() remote:FireServer(payload) end)
-				pcall(function() remote:FireServer("remoterTSS", payload) end)
+				pcall(function() remote:FireServer("Remoter ServerSideTSS", payload) end)
 				pcall(function() remote:FireServer(payloading) end)
 			end
 		end)
@@ -5889,7 +5879,7 @@ local function C_19()
 				end
 			end
 		end
-		print(string.format("Remoter: 🔍 Found %d potential remotes in %.2fms", #candidates, (os.clock() - initialScanStart) * 1000))
+		print(string.format("Remoter ServerSide: 🔍 Found %d potential remotes in %.2fms", #candidates, (os.clock() - initialScanStart) * 1000))
 
 		local testStartTime = os.clock()
 
@@ -5923,7 +5913,7 @@ local function C_19()
 						else
 							remoteEvent = testData.remote
 						end
-						print("Remoter: backdoor found:", testData.remote:GetFullName())
+						print("Remoter ServerSide: backdoor found:", testData.remote:GetFullName())
 						timeToFindExploit = os.clock() - initialScanStart
 						activeTests[testId] = nil
 						table.remove(activeTestIds, i)
@@ -5938,7 +5928,7 @@ local function C_19()
 
 		scanTime = os.clock() - initialScanStart
 		if not foundExploit then
-			print("Remoter: no backdoor found")
+			print("Remoter ServerSide: no backdoor found")
 		else
 			print("🔓 Backdoor remote located!")
 		end
@@ -5955,12 +5945,12 @@ local function C_19()
 		end)
 	else
 
-		print("Remoter: Running initial backdoor scan...")
+		print("Remoter ServerSide: Running initial backdoor scan...")
 		task.spawn(simpleFindRemote)
 	end
 end;
 task.spawn(C_19);
--- StarterGui.Remoter ServersideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.LocalScript
+-- StarterGui.Remoter ServerSideBackdoor.Interface.Main.Content.Executor.Buttons.Hide.LocalScript
 local function C_32()
 	local script = G2L["32"];
 	local eyeopen = 'rbxassetid://80089904565730'
@@ -5975,7 +5965,7 @@ local function C_32()
 	end)
 end;
 task.spawn(C_32);
--- StarterGui.Remoter ServersideBackdoor.Scripts.Core
+-- StarterGui.Remoter ServerSideBackdoor.Scripts.Core
 local function C_37()
 	local script = G2L["37"];
 	local scripts = script.Parent
