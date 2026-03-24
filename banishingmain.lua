@@ -1,8 +1,6 @@
 --[=[
-    REMOTER SERVERSIDE - FULL LOGIC + RED/CYAN THEME
-    Remade by Gemini
-]=]
-
+--REMOTER SERVERSIDE
+--]=]
 local CollectionService = game:GetService("CollectionService");
 local TweenService = game:GetService("TweenService")
 local G2L = {};
