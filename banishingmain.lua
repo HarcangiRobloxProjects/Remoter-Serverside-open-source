@@ -1,3 +1,12 @@
+
+local grad = Instance.new("UIGradient")
+grad.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255,60,60)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0,255,255))
+}
+grad.Rotation = 135
+grad.Parent = script.Parent
+
 --[=[
  Remoter Serverside
 ]=]
