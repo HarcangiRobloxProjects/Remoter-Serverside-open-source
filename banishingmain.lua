@@ -68,7 +68,7 @@ G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
 G2L["7"]["ScaleType"] = Enum.ScaleType.Slice;
 G2L["7"]["ImageTransparency"] = 0.5;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["7"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["7"]["Image"] = [[rbxassetid://6015897843]];
@@ -111,7 +111,7 @@ G2L["a"]["PaddingLeft"] = UDim.new(0, 50);
 G2L["b"] = Instance.new("ImageLabel", G2L["9"]);
 G2L["b"]["BorderSizePixel"] = 0;
 G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["b"]["AnchorPoint"] = Vector2.new(0, 0.5);
 G2L["b"]["Image"] = [[rbxassetid://8498174594]];
 G2L["b"]["Size"] = UDim2.new(0.03, 20, 0.2, 20);
@@ -152,7 +152,7 @@ G2L["e"]["PaddingLeft"] = UDim.new(0, 20);
 G2L["f"] = Instance.new("ImageLabel", G2L["d"]);
 G2L["f"]["BorderSizePixel"] = 0;
 G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["f"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["f"]["Image"] = [[rbxassetid://85435929620886]];
 G2L["f"]["Size"] = UDim2.new(-0.05, 20, -0.11, 20);
@@ -204,7 +204,7 @@ G2L["14"]["PaddingLeft"] = UDim.new(0, 20);
 G2L["15"] = Instance.new("ImageLabel", G2L["12"]);
 G2L["15"]["BorderSizePixel"] = 0;
 G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["15"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["15"]["Image"] = [[rbxassetid://107170038126400]];
 G2L["15"]["Size"] = UDim2.new(-0.05, 20, -0.11, 20);
@@ -256,7 +256,7 @@ G2L["1a"]["PaddingLeft"] = UDim.new(0, 20);
 G2L["1b"] = Instance.new("ImageLabel", G2L["18"]);
 G2L["1b"]["BorderSizePixel"] = 0;
 G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["1b"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["1b"]["Image"] = [[rbxassetid://95334865649966]];
 G2L["1b"]["Size"] = UDim2.new(-0.05, 20, -0.11, 20);
@@ -387,7 +387,7 @@ G2L["27"]["PaddingLeft"] = UDim.new(0, 35);
 G2L["28"] = Instance.new("ImageLabel", G2L["26"]);
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["28"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["28"]["Image"] = [[rbxassetid://94250258126863]];
 G2L["28"]["Size"] = UDim2.new(0.03, 20, 0.08, 20);
@@ -434,7 +434,7 @@ G2L["2c"]["Position"] = UDim2.new(0.99, -135, 0.35, 0);
 G2L["2d"] = Instance.new("ImageLabel", G2L["2c"]);
 G2L["2d"]["BorderSizePixel"] = 0;
 G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["2d"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["2d"]["Image"] = [[rbxassetid://90741188592731]];
 G2L["2d"]["Size"] = UDim2.new(0.09, 15, 0.16, 15);
@@ -490,7 +490,7 @@ G2L["33"]["PaddingLeft"] = UDim.new(0, 35);
 G2L["34"] = Instance.new("ImageLabel", G2L["31"]);
 G2L["34"]["BorderSizePixel"] = 0;
 G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["34"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["34"]["Image"] = [[rbxassetid://91515864926349]];
 G2L["34"]["Size"] = UDim2.new(0, 20, 0, 20);
@@ -699,7 +699,7 @@ G2L["4f"] = Instance.new("ImageLabel", G2L["4d"]);
 G2L["4f"]["ZIndex"] = 6;
 G2L["4f"]["BorderSizePixel"] = 0;
 G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["4f"]["ImageColor3"] = Color3.fromRGB(255, 0, 0);
 G2L["4f"]["AnchorPoint"] = Vector2.new(1, 0.5);
 G2L["4f"]["Image"] = [[rbxassetid://119893371750481]];
@@ -977,7 +977,7 @@ G2L["6b"]["BorderSizePixel"] = 0;
 G2L["6b"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
 G2L["6b"]["ScaleType"] = Enum.ScaleType.Slice;
 G2L["6b"]["ImageTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["6b"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["6b"]["Image"] = [[rbxassetid://6015897843]];
@@ -1014,7 +1014,7 @@ G2L["6e"] = Instance.new("ImageLabel", G2L["6d"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["ScaleType"] = Enum.ScaleType.Fit;
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+
 G2L["6e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["6e"]["Image"] = [[http://www.roblox.com/asset/?id=13571270194]];
 G2L["6e"]["Size"] = UDim2.new(0.4, 0, 0.4, 0);
